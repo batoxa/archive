@@ -1,0 +1,401 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Создать родительский блок с классом container, задать значение ширины и расположить блок по центру экрана.*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+
+/*Задать блоку с классом header значение высоты.
+Добавить фоновые изображения для header на каждой странице.*/
+
+.header {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+
+/*
+2. Footer (на всех страницах:)
+a. Задать высоту.
+b. Поменять цвет фона.
+c. Прижать текст “Все права защищены” к правому краю и отодвинуть от верхней и
+правой границы.*/
+
+.footer {
+    border-top: 1px solid #b4b4b4;
+    background-color: #b1b1b1;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/*Разместить меню справа от логотипа.
+    Прижать меню к правому краю.*/
+
+.menu_cont {
+    height: 100px;
+    width: 280px;
+    float: right;
+    vertical-align: middle;
+}
+
+.menu {
+    margin-top: 36px;
+    padding-left: 0;
+}
+
+
+/*. Из вертикального меню сделать горизонтальное.*/
+
+.menu li a {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 18px;
+    color: #004400;
+    list-style-type: none;
+    font-weight: 700;
+    font-family: 'El Messiri', 'Arial Narrow', Arial, sans-serif;
+    vertical-align: middle;
+    border-bottom: 2px solid #92010100;
+}
+
+.menu li {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li a:hover {
+    color: #920101;
+    border-bottom: 2px solid #9201011e;
+}
+
+.menu li a:active {
+    color: #0b0192;
+    border-bottom: 2px solid #0103921e;
+}
+
+
+/* Отодвинуть логотип от верхнего и левого края.*/
+
+.logo {
+    vertical-align: middle;
+    margin: 5px auto 5px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Prosto One', cursive;
+    font-size: 24px;
+}
+
+.text_red {
+    color: #920101;
+}
+
+.name_store {
+    padding-bottom: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #004400;
+    font-size: 50px;
+    text-align: center;
+}
+
+.logo_name {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.main_page {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+/*Страница каталога
+1. Создать блоки для картинки и ссылки на просмотр товара каталога.
+2. Расположить элементы каталога горизонтально.*/
+
+.catalog_item {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.catalog_all_item {
+    height: 100%;
+}
+
+.h3_goods {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    padding: 5px 10px;
+}
+
+
+/*
+a. Разместить краткое описание товара справа от картинки
+*/
+
+.short_goods {
+    display: inline-block;
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+
+/*
+3. Страница просмотра товара каталога:
+b. Добавить кнопку “Купить”
+c. Присвоить наведение и нажатие на кнопку “Купить”*/
+
+.buy {
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    line-height: 50px;
+    color: #000;
+    background-color: #b8b8b8;
+    border-bottom: 4px solid #880000;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.buy:hover {
+    color: #b8b8b8;
+    background-color: #880000;
+    border-bottom: 4px solid #880000;
+}
+
+.buy:active {
+    color: #000;
+    background-color: #00920c;
+    border-bottom: 4px solid #880000;
+}
+
+.full_goods {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.full_goods::first-letter {
+    font-size: 20px;
+    color: #810000;
+    font-weight: 700;
+}
+
+.options_goods {
+    text-align: left;
+    color: #770000;
+    font-size: 17px;
+    list-style-image: url(img/red_marker.png);
+    line-height: 20px;
+}
+
+.options_goods_cont {
+    display: inline-block;
+    text-align: center;
+}
+
+form p {
+    font-weight: 700;
+}
+
+.radio {
+    display: inline-block;
+    margin: 0 auto;
+    text-align-last: left;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin: 0 auto;
+    width: 400px;
+    height: 20px;
+    color: #7e0000;
+    display: block;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #dddddd;
+    border: none;
+    padding: 5px 30px;
+    margin: 15px 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    border-bottom: 3px solid #006600;
+}
+
+input[type="submit"]:hover {
+    background-color: #00660027;
+}
+
+input[type="reset"] {
+    border-bottom: 3px solid #880000;
+}
+
+input[type="reset"]:hover {
+    background-color: #8800002a;
+}
+
+textarea[name="comment"] {
+    width: 400px;
+    height: 150px;
+    color: #7e0000;
+}
+
+input,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+input[type="email"]:focus {
+    color: #80006e;
+    background-color: #f8bfff;
+}
+
+input[type="text"],
+textarea[name="comment"] {
+    text-transform: capitalize;
+}
+
+.pic_center_catalog {
+    background-color: #fff;
+    outline: 1px solid #8d8d8d;
+    margin: auto;
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pic_center_catalog img,
+.pic_center_goods img {
+    vertical-align: middle;
+}
+
+.pic_center_goods {
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 10px;
+    outline: 1px solid #004400;
+    width: 300px;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+}
+
+.pic_center_goods:hover {
+    outline: none;
+}
+
+.pic_link {
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #004400;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.pic_link p {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dot {
+    list-style-type: square;
+}
+
+.price {
+    margin: 0 auto;
+    font-size: 12px;
+    border-collapse: collapse;
+    border: 1px solid #505050;
+    text-align: center;
+}
+
+.price_grey td {
+    background-color: #e6e6e6;
+}
+
+.price td {
+    width: 150px;
+    border-spacing: 0;
+    border: 1px solid #505050;
+    height: 15px;
+}
+
+.head_table {
+    background-color: #d6d6d6;
+    height: 40px;
+    font-weight: 700;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+
+/*1. Ширина карты 100%,
+2. Высота карты 374px.*/
+
+.map {
+    width: 100%;
+    height: 374px;
+}
+
+
+/*
+font-family: 'Exo2', sans-serif;    прикольный шрифт
+*/
