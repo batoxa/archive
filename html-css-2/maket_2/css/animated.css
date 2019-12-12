@@ -1,0 +1,135 @@
+                    @-webkit-keyframes flip {
+                        0% {
+                            -webkit-transform: scaleX(1) translateZ(0) rotateY(-1turn);
+                            transform: scaleX(1) translateZ(0) rotateY(-1turn);
+                            -webkit-animation-timing-function: ease-out;
+                            animation-timing-function: ease-out
+                        }
+                        40% {
+                            -webkit-transform: scaleX(1) translateZ(150px) rotateY(-190deg);
+                            transform: scaleX(1) translateZ(150px) rotateY(-190deg);
+                            -webkit-animation-timing-function: ease-out;
+                            animation-timing-function: ease-out
+                        }
+                        50% {
+                            -webkit-transform: scaleX(1) translateZ(150px) rotateY(-170deg);
+                            transform: scaleX(1) translateZ(150px) rotateY(-170deg);
+                            -webkit-animation-timing-function: ease-in;
+                            animation-timing-function: ease-in
+                        }
+                        80% {
+                            -webkit-transform: scale3d(.95, .95, .95) translateZ(0) rotateY(0deg);
+                            transform: scale3d(.95, .95, .95) translateZ(0) rotateY(0deg);
+                            -webkit-animation-timing-function: ease-in;
+                            animation-timing-function: ease-in
+                        }
+                        to {
+                            -webkit-transform: scaleX(1) translateZ(0) rotateY(0deg);
+                            transform: scaleX(1) translateZ(0) rotateY(0deg);
+                            -webkit-animation-timing-function: ease-in;
+                            animation-timing-function: ease-in
+                        }
+                    }
+                    
+                    @keyframes flip {
+                        0% {
+                            -webkit-transform: scaleX(1) translateZ(0) rotateY(-1turn);
+                            transform: scaleX(1) translateZ(0) rotateY(-1turn);
+                            -webkit-animation-timing-function: ease-out;
+                            animation-timing-function: ease-out
+                        }
+                        40% {
+                            -webkit-transform: scaleX(1) translateZ(150px) rotateY(-190deg);
+                            transform: scaleX(1) translateZ(150px) rotateY(-190deg);
+                            -webkit-animation-timing-function: ease-out;
+                            animation-timing-function: ease-out
+                        }
+                        50% {
+                            -webkit-transform: scaleX(1) translateZ(150px) rotateY(-170deg);
+                            transform: scaleX(1) translateZ(150px) rotateY(-170deg);
+                            -webkit-animation-timing-function: ease-in;
+                            animation-timing-function: ease-in
+                        }
+                        80% {
+                            -webkit-transform: scale3d(.95, .95, .95) translateZ(0) rotateY(0deg);
+                            transform: scale3d(.95, .95, .95) translateZ(0) rotateY(0deg);
+                            -webkit-animation-timing-function: ease-in;
+                            animation-timing-function: ease-in
+                        }
+                        to {
+                            -webkit-transform: scaleX(1) translateZ(0) rotateY(0deg);
+                            transform: scaleX(1) translateZ(0) rotateY(0deg);
+                            -webkit-animation-timing-function: ease-in;
+                            animation-timing-function: ease-in
+                        }
+                    }
+                    
+                    @-webkit-keyframes rotateIn {
+                        0% {
+                            -webkit-transform-origin: center;
+                            transform-origin: center;
+                            -webkit-transform: rotate(-180deg);
+                            transform: rotate(-180deg);
+                            opacity: 0.3
+                        }
+                        to {
+                            -webkit-transform-origin: center;
+                            transform-origin: center;
+                            -webkit-transform: translateZ(0);
+                            transform: translateZ(0);
+                            opacity: 1
+                        }
+                    }
+                    
+                    @keyframes rotateIn {
+                        0% {
+                            -webkit-transform-origin: center;
+                            transform-origin: center;
+                            -webkit-transform: rotate(-180deg);
+                            transform: rotate(-180deg);
+                            opacity: 0.3
+                        }
+                        to {
+                            -webkit-transform-origin: center;
+                            transform-origin: center;
+                            -webkit-transform: translateZ(0);
+                            transform: translateZ(0);
+                            opacity: 1
+                        }
+                    }
+                    
+                    @keyframes switchintro {
+                        0% {
+                            background-image: url(../img/intro.jpg);
+                        }
+                        25% {
+                            background-image: url(../img/intro2.jpg);
+                        }
+                        50% {
+                            background-image: url(../img/intro2.jpg);
+                        }
+                        75% {
+                            background-image: url(../img/intro.jpg);
+                        }
+                        to {
+                            background-image: url(../img/intro.jpg);
+                        }
+                    }
+                    
+                    @-webkit-keyframes switchintro {
+                        0% {
+                            -webkit-background-image: url(../img/intro.jpg);
+                        }
+                        25% {
+                            -webkit-background-image: url(../img/intro2.jpg);
+                        }
+                        50% {
+                            -webkit-background-image: url(../img/intro2.jpg);
+                        }
+                        75% {
+                            -webkit-background-image: url(../img/intro.jpg);
+                        }
+                        to {
+                            -webkit-background-image: url(../img/intro.jpg);
+                        }
+                    }
